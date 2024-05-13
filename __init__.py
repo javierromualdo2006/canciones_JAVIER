@@ -12,6 +12,11 @@ def create_app():
 def hello():
     return app
 
+with app.app_context():
+   from . import db
+   db.init_app(app)
+
+
 
 
 
