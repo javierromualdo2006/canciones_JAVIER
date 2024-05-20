@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
+<title>{% block title %}{% endblock %} albums</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 <nav>
   <h1>ALBUMS</h1>
   {% for a in albums %}
   <ul>
-    <li>{{ a['Name'] }}</li>
+    <li>{{ a['Title'] }}</li>
   </ul>
   {% endfor %}
 </nav>
