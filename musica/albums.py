@@ -4,7 +4,7 @@ from flask import Blueprint, render_template
 bp = Blueprint('albums', __name__, url_prefix='/albums')
 from musica.db import get_db
 
-@bp.route('/albums')
+@bp.route('/')
 def albums():
     db = get_db()
     albums = db.execute(
