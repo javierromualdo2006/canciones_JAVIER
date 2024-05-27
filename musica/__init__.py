@@ -15,5 +15,9 @@ app.register_blueprint(artistas.bp)
 
 from . import albums
 app.register_blueprint(albums.bp)
-    
 
+from . import canciones
+app.register_blueprint(canciones.bp)
+
+from . import generos
+app.register_blueprint(generos.bp)

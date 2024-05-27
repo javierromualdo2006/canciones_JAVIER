@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% block title %} albums{% endblock %}
+{% block title %} generos{% endblock %}
 {% block header %}{% endblock %}
 
 {% block content %}
   <ul>
-    {% for a in albums %}
-    
-      <li>{{ a['Title'] }}</li>
+    {% for a in genres %}
+
+      <li>{{ a['Name'] }}</li>
   </ul>
 {% endfor %}
 

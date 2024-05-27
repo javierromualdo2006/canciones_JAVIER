@@ -1,4 +1,3 @@
-
 from flask import Blueprint, render_template
 
 bp = Blueprint('albums', __name__, url_prefix='/albums')
